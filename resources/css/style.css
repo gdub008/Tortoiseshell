@@ -8,6 +8,7 @@ header {
   display: flex;
   background-image: url("../glasses-bg.png");
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 30rem;
   justify-content: center;
@@ -74,6 +75,10 @@ nav a {
   padding: 1rem 2rem 1rem 0;
 }
 
+#mobile-nav {
+  display: none;
+}
+
 .callout {
   display: flex;
   margin-top: 10rem;
@@ -90,16 +95,16 @@ nav a {
   padding: 1.5rem 5rem;
 }
 
-/* Responsive design for Header */
+/* Responsive Tablet design for Header */
 
 @media only screen and (max-width:1080px) {
 
   header {
-    display: flex;
-    background-image: url("../glasses-bg.png");
-    background-size: cover;
     height: 22rem;
-    justify-content: center;
+  }
+
+  .nav-container {
+    margin: 0;
   }
 
   .callout {
@@ -146,7 +151,6 @@ nav a {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-
 }
 
 #exam img {
@@ -167,7 +171,6 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
-  border: 2px solid red;
 }
 
 .final-content site-container {
@@ -184,7 +187,6 @@ nav a {
   width: 35%;
   margin: 0 2.5%;
   flex-direction: column;
-  border: 2px solid yellow;
 }
 
 .philo-appts span {
@@ -217,4 +219,104 @@ footer {
   height: 1.5rem;
   width: auto;
   margin: 4rem 1rem 4rem 4rem;
+}
+
+
+/* Responsive Mobile design for Header */
+
+@media only screen and (max-width:560px) {
+
+  header {
+    height: 17rem;
+  }
+
+  .callout {
+    margin-top: 9rem;
+    margin-right: 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .callout span {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: bold;
+    background-color: white;
+    padding: 1rem 0;
+    width:100%;
+  }
+
+  .logo-title span {
+    display: none;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: block;
+  }
+
+/* Responsive icons */
+
+  .icon-gallery {
+    flex-direction: column;
+    margin: 3.77rem;
+    font-size: 0.77rem;
+  }
+
+  .icon-text {
+    height: auto;
+  }
+
+  #exam span {
+    margin-bottom: 1.54rem;
+  }
+
+  #ruler span {
+    margin-bottom: 1.54rem;
+  }
+
+  #truck span {
+    margin-bottom: 0rem;
+      border: 2px solid red;
+  }
+
+/* Responsive Philosophy and Appointments */
+
+  .info-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .philo-appts {
+    width: 100%;
+    margin: 0;
+  }
+
+  .philo-appts span {
+    text-align: center;
+  }
+
+  .philo-appts p {
+    margin-bottom: 4rem;
+  }
+
+  /* Responsive Footer */
+
+  .footer-logo-title {
+    justify-content: space-around;
+    border: 2px solid yellow;
+    width: 100%;
+  }
+
+  .footer-logo-title img {
+    margin: 4rem 0;
+  }
+
+  .footer-logo-title span {
+    display: none;
+  }
+
 }
